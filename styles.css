@@ -1,0 +1,167 @@
+html{
+    font-size: .9rem;
+}
+body{
+    text-align: center;
+    font-family: cursive;
+    font-weight: 300;
+    margin: 0;  
+}
+.photo{
+    max-width: 100%;
+    border-radius: 50%;
+
+}
+.container{
+    max-width: 570px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+h1, h2{
+    font-weight: 300;
+}
+h1{
+    font-size: 3.75rem;
+    margin-top: 0;
+}
+h2{
+    font-size: 2.5rem;
+    margin-top: 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: .5em 0;
+    margin-bottom: .5em;
+}
+h3{
+    font-size: 1.875rem;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+p{
+    margin-bottom: 0;
+}
+.accent-text{
+    display: block;
+}
+h1 .accent-text{
+    font-size: 5rem;
+}
+h2 .accent-text{
+    font-size: 3.75rem;
+}
+.accent-text,
+.name,
+.time{
+    font-weight: 900;
+    color: rgb(15, 228, 33);
+}
+a{
+    font-weight: 900;
+    color: yellowgreen;
+}
+a:hover, 
+a:focus{
+    color: blue;
+}
+header, section{
+    padding: 3.25em 0;
+    width: 100%;
+}
+header{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.inverse{
+    color: seashell;
+    background: rgb(66, 52, 52);
+}
+.inverse .btn:hover,
+.inverse .btn:focus{
+    color: yellow;
+    background: red;
+}
+.about{
+    color: blue;
+    
+}
+.btn{
+    display: inline-block;
+    color: yellow;
+    text-decoration: none;
+    padding: .625em 1.5625em;
+    background: red;
+    margin-top: 1.5625em;
+}
+
+.btn:hover,
+.btn:focus{
+    color: red;
+    background: aquamarine;
+}
+.portfolio-item img{
+    height: 15em;
+    width: 15em;
+    object-fit: cover;
+}
+
+@media (min-width:750px){
+    .splitter{
+        display: flex;
+        align-items: center;
+    }
+    
+    .articles.inverse{
+        background: rgb(235, 144, 144);
+        color: rgb(90, 59, 37);
+    }
+    .articles.inverse .accent-text,
+    .articles.inverse .name,
+    .articles.inverse time,
+    .articles.inverse a{
+        color: currentColor;
+    }
+    .articles.inverse a:hover,
+    .articles.inverse a:focus{
+        color: blue;
+    }
+    .articles.inverse .btn{
+        color: red;
+        background: aquamarine;
+    }
+    .articles.inverse .btn:hover{
+        color: yellow;
+        background: red;
+    }
+    .articles.inverse h2{
+        border-color: currentColor;
+    }
+    .portfolio{
+        background: seashell;
+        color: rgb(66, 52, 52);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    .portfolio .container{
+        max-width: 1200px;
+
+    }
+    .work{
+        display: flex;
+        justify-content: space-between;
+    }
+    .portfolio-item{
+        width: 28%;
+    }
+    .portfolio-item img{
+        height: 10em;
+        width: 10em;
+        object-fit: cover;
+        
+    }
+}
+
+
+
+
